@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:8080/'; // Base URL of your Spring Boot backend
+const API_URL = 'https://student-ms-backend-1.onrender.com'; // Base URL of your Spring Boot backend
 
 export const getStudents = () => axios.get(API_URL);
 export const getStudentById = (id) => axios.get(`${API_URL}${id}`);
