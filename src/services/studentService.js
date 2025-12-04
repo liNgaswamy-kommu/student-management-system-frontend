@@ -4,6 +4,6 @@ const API_URL = 'https://student-ms-backend-1.onrender.com'; // Base URL of your
 
 export const getStudents = () => axios.get(API_URL);
 export const getStudentById = (id) => axios.get(`${API_URL}${id}`);
-export const addStudent = (student) => axios.post(`${API_URL}add`, student);
+export const addStudent = (student) => axios.post(`${API_URL}/add`, student);
 export const updateStudent = (id, student) => axios.put(`${API_URL}${id}`, student);
 export const deleteStudent = (id) => axios.delete(`${API_URL}${id}`);
